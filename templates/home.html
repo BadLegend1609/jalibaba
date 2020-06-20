@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title> Home </title>
+{% endblock %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+  <h1 class="display-4">TOP SECERT CHUTIAGIRI</h1>
+  <p class="lead">
+    Ekhan e bawal hobe yo,<br>
+    Karon ekhn e sobai chutia...<br>
+    LOL
+  </p>
+</div>
+<div class="container text-center">
+  <h3>With Buk Bhora Asirbad From</h3>
+  <p><em><strong>Jali Baba</strong></em></p>
+  <image src="{{ url_for('static', filename='images/bharobaba.jpg')}}" width = '200'>
+  <p>Yo Yo Baba</p>
+</div>
+
+{% endblock %}

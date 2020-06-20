@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Login</title>
+{% endblock %}
+
+{% block body %}
+<div class="jumbotron">
+    <div class = 'row'>
+        <div class = 'col-md-8'>
+            <h1 class="display-4">Login</h1>
+            <p>Welcome user, hope you have fun here</p>
+        </div>
+        <div class = 'col-md-4'>
+            <div class="card" style="background: #2980b9;
+            background: -webkit-linear-gradient(to right, #2c3e50, #2980b9); background: linear-gradient(to right, #2c3e50, #2980b9); color: aliceblue;">
+                <div class="card-body">
+                    <form class="form" method="POST" action="/login_validation">
+                        <label>Email</label><br>
+                        <input type="email" class="form-control" name="email"><br>
+                        <label>Password</label><br>
+                        <input type="password" class="form-control" name="password"><br>
+                        <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                    </form>
+                    <p>Not a member?<a href="/register" style="color: aliceblue;"><u> Register Here</u></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
